@@ -1,0 +1,16 @@
+<% include partials/header %>
+
+<div class="container">
+	<div class="row">
+		<h1 style="text-align: center;">Log in to your account!</h1>
+		<div style="width: 30%; margin: 33px auto;">
+			<form action="/login" method="POST">
+				<input class="space form-control" type="text" name="username" placeholder="username">
+				<input class="space form-control" type="password" name="password" placeholder="password">
+				<button class="space form-control btn btn-primary">Log in</button>
+			</form>
+		</div>
+	</div>
+</div>
+
+<% include partials/footer %>

@@ -1,0 +1,33 @@
+<% include ../partials/header %>
+
+<div class="container">
+	<header class="jumbotron">
+		<div class="container">
+			<h1><i class="fas fa-tree"></i> Welcome to this camping site</h1>
+			<p>View these beautiful campgrounds from Hungary!</p>
+			<a href="campgrounds/new" class="btn btn-primary btn-large">Click here to add new campground</a>
+		</div>
+	</header>
+
+	<div class="col-lg-12">
+			<h3>Our most popular camps</h3>
+		</div>
+	<div class="row text-center" style="display: flex; flex-wrap: wrap;">
+		<% campgrounds.forEach(function(camp){ %>
+		<div class="col-md-3 col-sm-6">
+			<div class="thumbnail">
+				<img src="<%=camp.image %>"> 
+				<div class="caption-full">
+				<h3>
+				<%= camp.name%>
+				</h3>
+				</div>
+				<p>
+					<a href="/campgrounds/<%= camp._id%>" class="btn btn-primary">More Info</a>
+				</p>
+			</div>
+		</div>	
+	<% }); %>
+	</div>
+</div>
+<% include ../partials/footer %>

@@ -1,0 +1,37 @@
+body {
+	background: #D3CCE3;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #E9E4F0, #D3CCE3); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.space{
+	margin-top: 10px;
+}
+
+.fa-tree {
+	color: #1d6124;
+}
+
+.jumbotron {
+	margin-top: 30px;	
+}
+
+.thumbnail {
+	padding: 0px;
+}
+.thumbnail img{
+	width: 100%;
+}
+.thumbnail .caption-full {
+	padding: 9px;
+}
+.delete {
+	display: inline;
+}
+.deleteButton{
+	float: right;
+}
+
+#show-container{
+	margin-top: 15px;
+}
